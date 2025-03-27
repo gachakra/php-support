@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://schema.phpunit.de https://schema.phpunit.de/phpunit-9.5.xsd"
+         backupGlobals="false"
+         bootstrap="tests/bootstrap.php"
+         processIsolation="false"
+         stopOnFailure="false"
+         colors="true"
+         stderr="true"
+         cacheResultFile=".phpunit.cache/result"
+>
+    <testsuites>
+        <testsuite name="PHP Support Test Suite">
+            <directory suffix="Test.php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <ini name="memory_limit" value="-1"/>
+    </php>
+
+    <logging>
+        <log type="coverage-html" target="build/coverage-report"/>
+    </logging>
+</phpunit>
