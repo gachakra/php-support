@@ -1,0 +1,23 @@
+.env
+
+# Libraries
+vendor/
+node_modules/
+
+# PHPUnit
+.phpunit.result.cache
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
+
+#VS code
+.vscode/
+
+# OS
+.DS_Store
+
+# Docker
+!docker/**/.env
